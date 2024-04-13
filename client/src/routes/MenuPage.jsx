@@ -36,7 +36,7 @@ const MenuPage = (props) => {
         </button>
         {/* Check if selectedRestaurant is not null before accessing its properties */}
         <h1 className="text-center display-1">
-          {selectedRestaurant.restaurant.name} Menu
+          {selectedRestaurant && selectedRestaurant.restaurant.name} Menu
         </h1>
       </div>
       <MenuList restaurantId={id} />
